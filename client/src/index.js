@@ -12,6 +12,8 @@ import EmployeeUpdater from "./Pages/EmployeeUpdater";
 import "./index.css";
 import TableTest from "./Pages/TableTest";
 import FormTest from "./Pages/FormTest";
+import Hello from "./Pages/Hello";
+import SuperheroesList from "./Pages/SuperheroesList";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
         path: "/form-test",
         element: <FormTest />,
       },
+      {
+        path: "/hello",
+        element: <Hello />,
+      },
+      {
+        path: "/employees/superheroes",
+        element: <SuperheroesList />,
+      }
     ],
   },
 ]);
